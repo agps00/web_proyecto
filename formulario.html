@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixNow - Solicitar reparación</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor cabecera">
+
+            <a href="index.html" class="logo">FixNow</a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Servicios</a></li>
+                    <li><a href="formulario.html">Solicitar reparación</a></li>
+                    <li><a href="login.html">Iniciar sesión</a></li>
+                    <li><a href="carrito.html">Carrito</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="formulario">
+
+            <h1>Solicitar una reparación</h1>
+
+            <p>
+                Completa los siguientes datos para indicarnos qué necesitas reparar.
+            </p>
+
+            <form action="#" method="post">
+
+                <fieldset>
+
+                    <legend>Datos del cliente</legend>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+
+                    <label for="codigo">Código postal:</label>
+                    <input type="text" id="codigo" name="codigo" required>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Datos de la reparación</legend>
+
+                    <label for="especialidad">Especialidad:</label>
+
+                    <select id="especialidad" name="especialidad" required>
+                        <option value="">Selecciona una especialidad</option>
+                        <option value="mecanica">Mecánica</option>
+                        <option value="electricidad">Electricidad</option>
+                        <option value="electronica">Electrónica</option>
+                        <option value="frio">Frío y refrigeración</option>
+                        <option value="climatizacion">Climatización</option>
+                        <option value="electrodomesticos">Electrodomésticos</option>
+                    </select>
+
+                    <label for="equipo">Tipo de equipo:</label>
+                    <input type="text" id="equipo" name="equipo"
+                        placeholder="Ejemplo: cámara frigorífica" required>
+
+                    <label for="fecha">Fecha preferida:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <p>Modalidad de reparación:</p>
+
+                    <div class="opcion">
+                        <input type="radio" id="domicilio" name="modalidad"
+                            value="domicilio" required>
+                        <label for="domicilio">Reparación a domicilio</label>
+                    </div>
+
+                    <div class="opcion">
+                        <input type="radio" id="recogida" name="modalidad"
+                            value="recogida">
+                        <label for="recogida">Recogida del equipo</label>
+                    </div>
+
+                    <label for="descripcion">Describe la avería:</label>
+                    <textarea id="descripcion" name="descripcion"
+                        placeholder="Explica qué le ocurre al equipo..." required></textarea>
+
+                </fieldset>
+
+                <div class="opcion">
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <label for="privacidad">
+                        Acepto las condiciones de privacidad.
+                    </label>
+                </div>
+
+                <p>
+                    <button type="submit" class="boton">Enviar solicitud</button>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>FixNow - Your repair. One tap away.</p>
+    </footer>
+
+</body>
+</html>

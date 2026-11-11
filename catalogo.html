@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixNow - Catálogo de servicios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor cabecera">
+
+            <a href="index.html" class="logo">FixNow</a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Servicios</a></li>
+                    <li><a href="formulario.html">Solicitar reparación</a></li>
+                    <li><a href="login.html">Iniciar sesión</a></li>
+                    <li><a href="carrito.html">Carrito</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="contenedor">
+
+        <h1>Catálogo de servicios</h1>
+
+        <p>
+            Encuentra el servicio de reparación que necesitas.
+        </p>
+
+        <section>
+
+            <label for="buscar">Buscar servicio:</label>
+            <input type="search" id="buscar" name="buscar" placeholder="Escribe el nombre de un servicio">
+
+            <label for="filtro">Filtrar por especialidad:</label>
+
+            <select id="filtro" name="filtro">
+                <option value="">Todas las especialidades</option>
+                <option value="mecanica">Mecánica</option>
+                <option value="electricidad">Electricidad</option>
+                <option value="electronica">Electrónica</option>
+                <option value="frio">Frío</option>
+            </select>
+
+        </section>
+
+        <section class="tarjetas">
+
+            <article class="tarjeta">
+
+                <img src="img/motor.svg" alt="Herramientas de reparación mecánica">
+
+                <h2>Reparación mecánica</h2>
+
+                <p>Reparación de motores, bombas y componentes mecánicos.</p>
+
+                <p><strong>Desde 45 €</strong></p>
+
+                <a href="detalle.html" class="boton">Ver detalles</a>
+
+            </article>
+
+            <article class="tarjeta">
+
+                <img src="img/electricidad.svg" alt="Componentes eléctricos">
+
+                <h2>Reparación eléctrica</h2>
+
+                <p>Localización y reparación de averías eléctricas.</p>
+
+                <p><strong>Desde 40 €</strong></p>
+
+                <a href="detalle.html" class="boton">Ver detalles</a>
+
+            </article>
+
+            <article class="tarjeta">
+
+                <img src="img/electronicas.jpg" alt="Placa electrónica">
+
+                <h2>Reparación electrónica</h2>
+
+                <p>Revisión de placas electrónicas y componentes de control.</p>
+
+                <p><strong>Desde 35 €</strong></p>
+
+                <a href="detalle.html" class="boton">Ver detalles</a>
+
+            </article>
+
+            <article class="tarjeta">
+
+                <img src="img/frio.jpg" alt="Equipo de refrigeración">
+
+                <h2>Reparación de frío</h2>
+
+                <p>Revisión de cámaras frigoríficas y equipos de refrigeración.</p>
+
+                <p><strong>Desde 60 €</strong></p>
+
+                <a href="detalle.html" class="boton">Ver detalles</a>
+
+            </article>
+
+            <article class="tarjeta">
+
+                <img src="img/electrodomesticos.jpg" alt="Electrodomésticos">
+
+                <h2>Electrodomésticos</h2>
+
+                <p>Reparación de electrodomésticos y pequeños equipos.</p>
+
+                <p><strong>Desde 30 €</strong></p>
+
+                <a href="detalle.html" class="boton">Ver detalles</a>
+
+            </article>
+
+            <article class="tarjeta">
+
+                <img src="img/climatizacion.jpg" alt="Equipo de climatización">
+
+                <h2>Climatización</h2>
+
+                <p>Revisión y mantenimiento de equipos de climatización.</p>
+
+                <p><strong>Desde 50 €</strong></p>
+
+                <a href="detalle.html" class="boton">Ver detalles</a>
+
+            </article>
+
+        </section>
+
+        <p>
+            Los precios son orientativos y pueden variar según el tipo de avería.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>FixNow - Your repair. One tap away.</p>
+    </footer>
+
+</body>
+</html>
