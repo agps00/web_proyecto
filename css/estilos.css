@@ -1,1 +1,262 @@
+/* ESTILOS GENERALES */
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* CABECERA */
+
+header {
+    background-color: #123b66;
+    color: white;
+    padding: 20px 0;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffcc33;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffcc33;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    padding: 30px 0;
+}
+
+h1, h2, h3 {
+    color: #123b66;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #ffcc33;
+    color: #123b66;
+    padding: 12px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #f0b900;
+}
+
+/* PORTADA */
+
+.portada {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.portada-texto {
+    flex: 1;
+}
+
+.portada img {
+    width: 40%;
+}
+
+/* TARJETAS Y CATÁLOGO */
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.tarjeta img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.tarjeta h3 {
+    margin-bottom: 10px;
+}
+
+/* FORMULARIOS */
+
+.formulario {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+legend {
+    color: #123b66;
+    font-weight: bold;
+}
+
+.opcion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.opcion input {
+    width: auto;
+}
+
+/* LOGIN */
+
+.login {
+    max-width: 450px;
+}
+
+/* DETALLE DEL SERVICIO */
+
+.detalle {
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.detalle img {
+    width: 40%;
+    object-fit: contain;
+}
+
+/* CARRITO */
+
+.producto-carrito {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.resumen {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin-top: 25px;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #123b66;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* FOCO PARA NAVEGACIÓN CON TECLADO */
+
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 3px solid #ffcc33;
+    outline-offset: 2px;
+}
+
+/* ADAPTACIÓN A PANTALLAS PEQUEÑAS */
+
+@media (max-width: 700px) {
+
+    .cabecera {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portada, .detalle {
+        flex-direction: column;
+    }
+
+    .portada img, .detalle img {
+        width: 100%;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+}
